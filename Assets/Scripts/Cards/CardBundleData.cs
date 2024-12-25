@@ -5,8 +5,8 @@ namespace Cards
     [CreateAssetMenu(fileName = "New CardBundleData", menuName = "Card Bundle Data", order = 10)]
     public class CardBundleData : ScriptableObject
     {
-        [SerializeField] private CardData[] _cardDatas;
+        [SerializeField] private CardData[] _cards;
 
-        public CardData[] CardDatas => _cardDatas;
+        public CardData[] Cards => _cards;
     }
 }

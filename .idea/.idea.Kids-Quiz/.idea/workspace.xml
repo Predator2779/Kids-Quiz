@@ -12,7 +12,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cards/CardBundleData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Preparation/LevelSettings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -22,12 +21,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GridData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GridGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardBundleData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cards/CardBundleData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/FieldDependency.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cards/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cards/FieldDependencyEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cards/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/LevelSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/GameSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/LevelCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cards/CardBundleData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameEntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/GridGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/T.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DoButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/CardCreator.cs" />
       </list>
     </option>
   </component>
@@ -75,6 +82,12 @@
       <updated>1734537996268</updated>
       <workItem from="1734538004653" duration="593000" />
       <workItem from="1734541348950" duration="4306000" />
+      <workItem from="1734549526601" duration="2297000" />
+      <workItem from="1734601090254" duration="4165000" />
+      <workItem from="1734630348296" duration="6411000" />
+      <workItem from="1734686320150" duration="2919000" />
+      <workItem from="1734721785296" duration="1115000" />
+      <workItem from="1735145633966" duration="318000" />
     </task>
     <servers />
   </component>
@@ -87,9 +100,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="172" key="#Run/Debug_Configuration_Templates" timestamp="1707658445815">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="446" y="136" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1734722842082">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="552" y="172" key="#Run/Debug_Configuration_Templates/0.0.1920.1040" timestamp="1707658445815" />
+    <state x="446" y="136" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1734722842082" />
+    <state x="496" y="243" key="run.anything.popup" timestamp="1734632689186">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="496" y="243" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1734632689186" />
   </component>
 </project>

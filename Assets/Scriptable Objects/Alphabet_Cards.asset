@@ -12,6 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ffe70bc5eb8d84cba80ed2d22e5c56, type: 3}
   m_Name: Alphabet_Cards
   m_EditorClassIdentifier: 
-  _cardDatas:
+  _cards:
   - _identifier: A
     _sprite: {fileID: -2088730668, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: B
+    _sprite: {fileID: -104890297, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: C
+    _sprite: {fileID: -1938036555, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: D
+    _sprite: {fileID: 1757803241, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: F
+    _sprite: {fileID: -619412347, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: G
+    _sprite: {fileID: 967273610, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: J
+    _sprite: {fileID: 813864795, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: I
+    _sprite: {fileID: -594221558, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: E
+    _sprite: {fileID: -1827924052, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: H
+    _sprite: {fileID: -1309545375, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: K
+    _sprite: {fileID: 51951178, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: L
+    _sprite: {fileID: -950891215, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}
+  - _identifier: M
+    _sprite: {fileID: -215452977, guid: ffd627c50fb28b249b18d4c02cbc95fe, type: 3}

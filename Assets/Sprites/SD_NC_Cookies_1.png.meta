@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 623
+        width: 167
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f55e4966be5634bbc30bae31af4105
+      internalID: -1262082541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 624
+        width: 277
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a93bdc7b583e4a439a6811d9f878b85
+      internalID: -65682320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 623
+        width: 271
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e157433fe6815442b5068198694dc9a
+      internalID: 654472277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_3
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 623
+        width: 273
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d248d22a64611904d932d09e9d54b61a
+      internalID: -778977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 224
+        width: 303
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a93a3dbfd9277c449ad7e24ec662d6b
+      internalID: -1188764144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 223
+        width: 296
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a966933f7ada49642b5028251d2fbc0e
+      internalID: -1719104586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_6
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 346
+        width: 395
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3342415a6e922b049933d7601ef61b81
+      internalID: -1239530443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_NC_Cookies_1_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 5
+        width: 394
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d5eccb4920b5a4da577c0da47f66d8
+      internalID: 1998641480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SD_NC_Cookies_1_0: -1262082541
+      SD_NC_Cookies_1_1: -65682320
+      SD_NC_Cookies_1_2: 654472277
+      SD_NC_Cookies_1_3: -778977
+      SD_NC_Cookies_1_4: -1188764144
+      SD_NC_Cookies_1_5: -1719104586
+      SD_NC_Cookies_1_6: -1239530443
+      SD_NC_Cookies_1_7: 1998641480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

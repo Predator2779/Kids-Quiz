@@ -121,7 +121,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LC_letters_2_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 711
+        width: 223
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4cee1e3146508459db410de12e7386
+      internalID: -1286777809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 705
+        width: 211
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677bd14296dce644d9602fdeb65cb75f
+      internalID: -1598152875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_2
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 710
+        width: 245
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f1b67133560cc45849cffe392c2226
+      internalID: 1394281960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_3
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 710
+        width: 277
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b81c875069f9f243b33eed6aedb9573
+      internalID: 1664406076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 389
+        width: 311
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c94e4a5efb7c54583d7a47e1c814db
+      internalID: -785530241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_5
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 390
+        width: 311
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3742d4b1399058d44acf3725e6c13a65
+      internalID: 2059415166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_6
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 395
+        width: 386
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacd7caf6035d004a87a791f45c983c6
+      internalID: -678800634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 73
+        width: 202
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bd1dd8dfc6b7a4385bdb88ab3b2e3d
+      internalID: -260594536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 74
+        width: 272
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694b78aeeec0b1a4e966f89a59bcc509
+      internalID: 462085571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_9
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 74
+        width: 219
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d943d634376e83478d564034304aa59
+      internalID: 1831173635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LC_letters_2_10
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 79
+        width: 252
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6fde677381f1b48965df428e8682dd
+      internalID: 1592858344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +363,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LC_letters_2_0: -1286777809
+      LC_letters_2_1: -1598152875
+      LC_letters_2_10: 1592858344
+      LC_letters_2_2: 1394281960
+      LC_letters_2_3: 1664406076
+      LC_letters_2_4: -785530241
+      LC_letters_2_5: 2059415166
+      LC_letters_2_6: -678800634
+      LC_letters_2_7: -260594536
+      LC_letters_2_8: 462085571
+      LC_letters_2_9: 1831173635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
