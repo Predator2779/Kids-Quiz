@@ -16,19 +16,20 @@ namespace Preparation
             _gameChecker = gameChecker;
         }
 
-        public GameObject GetCorrectCard(CardData cardData) 
-            => GetCard($"{cardData.Identifier}-CorrectCard", cardData.Sprite, _gameChecker.PassLevel);
+        public Card GetCorrectCard(CardData cardData) 
+            => GetCard($"{cardData.Identifier}-CorrectCard", cardData, _gameChecker.PassLevel);
 
-        public GameObject GetIncorrectCard(CardData cardData) 
-            => GetCard($"{cardData.Identifier}-IncorrectCard", cardData.Sprite, _gameChecker.FailLevel);
+        public Card GetIncorrectCard(CardData cardData) 
+            => GetCard($"{cardData.Identifier}-IncorrectCard", cardData, _gameChecker.FailLevel);
 
-        private GameObject GetCard(string name, Sprite sprite, UnityAction action)
+        private Card GetCard(string nameCard, CardData cardData, UnityAction action)
         {
-            var card = new GameObject(name);
-            var button = card.AddComponent<Button>();
+            var card = new GameObject(nameCard).AddComponent<Card>();
+            card.CardData = cardData;
+            var button = card.gameObject.AddComponent<Button>();
             button.onClick.AddListener(action);
             button.onClick.AddListener(() => { card.transform.DOScale(1.5f, 0.1f); }); // привести в порядок
-            card.AddComponent<Image>().sprite = sprite;
+            card.gameObject.AddComponent<Image>().sprite = cardData.Sprite;
             return card;
         }
     }

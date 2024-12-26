@@ -22,6 +22,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Cards" t="Include">
+            <e p="Card.cs" t="Include" />
             <e p="CardBundleData.cs" t="Include" />
             <e p="CardData.cs" t="Include" />
           </e>
@@ -47,6 +48,6 @@
       <e p="Temp\Bin" t="ExcludeRecursive" />
     </e>
     <e p="C:\Users\Р\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Р\AppData\Local\JetBrains\Rider2020.2\resharper-host\Temp\ReSharper.Db.2024-12-25_21-53-39.599" t="ExcludeRecursive" />
+    <e p="C:\Users\Р\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Kids-Quiz.-1600181933.00" t="ExcludeRecursive" />
   </component>
 </project>

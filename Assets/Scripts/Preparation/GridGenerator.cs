@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Cards;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,103 +23,72 @@ namespace Preparation
             if (level.columns * level.rows > level.cardBundleData.Cards.Length)
                 throw new Exception("Card bundle data less than the length of the array");
 
-            GenerateGrid(level.columns, level.rows, level.cardBundleData, _canvas.transform);
+            GenerateGrid(level.cardBundleData, level.rows, level.columns, _canvas.transform);
         }
 
-        private void GenerateGrid(int columns, int rows, CardBundleData cardBundleData, Transform parent)
+        private void GenerateGrid(CardBundleData cardBundleData, int rows, int columns, Transform parent)
         {
-            var arr = GetCardsArray(cardBundleData, columns * rows);
-            var index = 0;
+            var cards = GetCardsArray(cardBundleData, rows * columns);
+            const float spacing = 50f;
 
-            // Отступ между ячейками
-            const float spacing = 10f;
+            int cardIndex = 0;
 
-            // Находим максимальные размеры ячеек
-            float maxWidth = 0;
-            float maxHeight = 0;
-
-            foreach (var card in arr)
+            for (int row = 0; row < rows; row++)
             {
-                var sprite = card.GetComponent<Image>().sprite;
-                maxWidth = Mathf.Max(maxWidth, sprite.bounds.size.x * 100);   // magic num for scaling
-                maxHeight = Mathf.Max(maxHeight, sprite.bounds.size.y * 100); // magic num for scaling
-            }
-
-            // Размеры ячейки с учётом отступов
-            float cellWidth = maxWidth + spacing;
-            float cellHeight = maxHeight + spacing;
-
-            // Общие размеры сетки
-            float gridWidth = columns * cellWidth - spacing;
-            float gridHeight = rows * cellHeight - spacing;
-
-            // Начальная позиция для выравнивания по центру
-            Vector2 startPosition = new Vector2(-gridWidth / 2 + cellWidth / 2, gridHeight / 2 - cellHeight / 2);
-
-            // Размещение объектов
-            for(int row = 0; row < rows; row++)
-            {
-                for(int column = 0; column < columns; column++)
+                float rowWidth = 0f;
+                for (int col = 0; col < columns; col++)
                 {
-                    var card = arr[index];
+                    var cardSprite = cards[cardIndex++].CardData.Sprite;
+                    rowWidth += cardSprite.bounds.size.x * 100 + spacing;
+                }
 
-                    RectTransform rectTransform = card.GetComponent<RectTransform>();
-                    rectTransform.SetParent(parent);
+                rowWidth -= spacing;          
+                float startX = -rowWidth / 2f;
+                
+                cardIndex -= columns;
+                for (int col = 0; col < columns; col++)
+                {
+                    var card = cards[cardIndex++];
+                    var rect = card.GetComponent<RectTransform>();
+                    var cardSize = card.CardData.Sprite.bounds.size * 100;
 
-                    // Устанавливаем позицию
-                    float xPosition = startPosition.x + column * cellWidth;
-                    float yPosition = startPosition.y - row * cellHeight;
-                    rectTransform.anchoredPosition = new Vector2(xPosition, yPosition);
+                    rect.SetParent(parent);
+                    rect.sizeDelta = cardSize;
+                    rect.anchoredPosition = new Vector2(startX + cardSize.x / 2, -row * (cardSize.y + spacing));
+                    rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0.5f, 0.5f);
+                    rect.localScale = Vector3.one;
 
-                    // Устанавливаем размеры
-                    var sprite = card.GetComponent<Image>().sprite;
-                    rectTransform.sizeDelta = sprite.bounds.size * 100; // magic num for scaling
-
-                    // Убираем растягивание
-                    rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
-                    rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-                    rectTransform.pivot = new Vector2(0.5f, 0.5f);
-                    rectTransform.localScale = Vector3.one;
-
-                    index++;
+                    startX += cardSize.x + spacing;
                 }
             }
         }
 
-        private GameObject[] GetCardsArray(CardBundleData cardBundleData, int length)
+        private Card[] GetCardsArray(CardBundleData cardBundleData, int length)
         {
             if (length > cardBundleData.Cards.Length)
                 throw new Exception("Card bundle data less than the length of the array");
 
-            var arr = new GameObject[length];
+            var arr = new Card[length];
             var availableIndexes = new List<int>();
-
-            // Инициализация списка доступных индексов
-            for (int i = 0; i < cardBundleData.Cards.Length; i++)
-            {
+            
+            for(int i = 0; i < cardBundleData.Cards.Length; i++)
                 availableIndexes.Add(i);
-            }
 
-            // Выбор индекса для правильной карты
             var correctCardIndex = UnityEngine.Random.Range(0, length);
 
-            for (int i = 0; i < length; i++)
+            for(int i = 0; i < length; i++)
             {
-                // Случайный индекс из доступных
                 int randomIndex = UnityEngine.Random.Range(0, availableIndexes.Count);
                 int cardIndex = availableIndexes[randomIndex];
-
-                // Добавляем карту в массив
+                
                 arr[i] = i == correctCardIndex
                     ? _cardCreator.GetCorrectCard(cardBundleData.Cards[cardIndex])
                     : _cardCreator.GetIncorrectCard(cardBundleData.Cards[cardIndex]);
-
-                // Удаляем использованный индекс
+                
                 availableIndexes.RemoveAt(randomIndex);
             }
 
             return arr;
         }
-
     }
 }
