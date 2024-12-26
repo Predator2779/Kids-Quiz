@@ -29,12 +29,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/GameSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/LevelCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cards/CardBundleData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameEntryPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/T.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DoButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cards/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/CardCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameEntryPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Preparation/GridGenerator.cs" />
       </list>
     </option>
@@ -89,7 +89,7 @@
       <workItem from="1734686320150" duration="2919000" />
       <workItem from="1734721785296" duration="1115000" />
       <workItem from="1735145633966" duration="2564000" />
-      <workItem from="1735203342980" duration="8310000" />
+      <workItem from="1735203342980" duration="12865000" />
     </task>
     <servers />
   </component>

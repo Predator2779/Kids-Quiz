@@ -7,6 +7,7 @@ namespace Gameplay
     {
         [SerializeField] private GameSettings _gameSettings;
         [SerializeField] private Canvas _canvas;
+        [SerializeField] private int _cardScale;
 
         private GameChecker _gameChecker;
         
@@ -14,7 +15,7 @@ namespace Gameplay
         {
             _gameChecker = new GameChecker();
             var cardCreator = new CardCreator(_gameChecker);
-            var gridGenerator = new GridGenerator(cardCreator, _canvas);
+            var gridGenerator = new GridGenerator(cardCreator, _canvas, _cardScale);
             new LevelCreator(_gameSettings, gridGenerator).CreateStartLevel();
         }
     }
